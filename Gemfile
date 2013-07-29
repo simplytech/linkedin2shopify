@@ -56,11 +56,11 @@ gem 'shopify_app'
 
 group :development, :test do
   #gem "less-rails-bootstrap"
-  #gem "therubyracer", platforms: :ruby
+  gem "therubyracer", platforms: :ruby
 end
 
 gem "less-rails-bootstrap"
-gem "therubyracer", platforms: :ruby
+#gem "therubyracer", platforms: :ruby
 
 
 gem 'figaro'
