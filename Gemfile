@@ -53,8 +53,10 @@ end
 gem 'shopify_app'
 
 group :development, :test do
-  gem "less-rails-bootstrap"
+  #gem "less-rails-bootstrap"
   gem "therubyracer", platforms: :ruby
 end
+
+gem "less-rails-bootstrap"
 
 gem 'figaro'
