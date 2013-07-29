@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+ruby '2.0.0'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0'
 
@@ -54,9 +56,11 @@ gem 'shopify_app'
 
 group :development, :test do
   #gem "less-rails-bootstrap"
-  gem "therubyracer", platforms: :ruby
+  #gem "therubyracer", platforms: :ruby
 end
 
 gem "less-rails-bootstrap"
+gem "therubyracer", platforms: :ruby
+
 
 gem 'figaro'
