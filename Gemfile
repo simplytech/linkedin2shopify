@@ -64,3 +64,4 @@ gem "therubyracer", platforms: :ruby
 
 
 gem 'figaro'
+gem 'rails_12factor', group: :production
