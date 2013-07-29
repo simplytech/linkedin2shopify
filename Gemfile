@@ -49,3 +49,5 @@ group :development, :test do
   gem "less-rails-bootstrap"
   gem "therubyracer", platforms: :ruby
 end
+
+gem 'figaro'
