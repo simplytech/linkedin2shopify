@@ -8,6 +8,12 @@ MyShopifyApp::Application.routes.draw do
     delete 'logout' => :destroy
   end
   root :to => 'home#index'
+  
+  controller :linkedin do
+    get 'linkedin/index' => :index
+    get 'auth/linkedin/callback' => :callback
+  end
+  
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

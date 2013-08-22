@@ -51,7 +51,7 @@ end
 # gem 'capistrano', group: :development
 
 # Use debugger
-# gem 'debugger', group: [:development, :test]
+gem 'debugger', group: [:development, :test]
 gem 'shopify_app'
 
 group :development, :test do
@@ -65,3 +65,5 @@ gem "therubyracer", platforms: :ruby
 
 gem 'figaro'
 gem 'rails_12factor', group: :production
+
+gem 'linkedin'
