@@ -1,0 +1,120 @@
+# Logfile created on 2013-08-21 21:14:19 -0400 by logger.rb/36483
+I, [2013-08-21T21:14:19.946343 #20808]  INFO -- : GET https://test-1-257.myshopify.com:443/admin/themes.json
+I, [2013-08-21T21:14:19.968137 #20808]  INFO -- : --> 200 OK 276 (694.3ms)
+I, [2013-08-21T21:14:19.977101 #20808]  INFO -- : Headers: {"Authorization"=>"Basic ODYxYWU5NDkxOTliY2NlNGUyNjg2NjExNGI0ZDk3Y2Q6NjIzOTFkMTU2MGNlNTJiMmJjY2FkZmJjYjU1MjJiNWE=", "Accept"=>"application/json", "User-Agent"=>"ShopifyAPI/3.0.3 ActiveResource/4.0.0 Ruby/2.0.0"}
+I, [2013-08-21T21:14:19.977263 #20808]  INFO -- : Response:
+{"themes":[{"created_at":"2013-07-28T21:54:29-04:00","id":4587776,"name":"radiance","role":"unpublished","updated_at":"2013-08-09T12:47:17-04:00"},{"created_at":"2013-08-09T12:45:57-04:00","id":4650733,"name":"Couture","role":"main","updated_at":"2013-08-09T12:47:17-04:00"}]}
+I, [2013-08-21T21:14:20.219836 #20808]  INFO -- : GET https://test-1-257.myshopify.com:443/admin/themes/4587776/assets.json?asset%5Bkey%5D=templates%2F404.liquid&theme_id=4587776
+I, [2013-08-21T21:14:20.219989 #20808]  INFO -- : --> 200 OK 574 (193.2ms)
+I, [2013-08-21T21:14:20.220135 #20808]  INFO -- : Headers: {"Authorization"=>"Basic ODYxYWU5NDkxOTliY2NlNGUyNjg2NjExNGI0ZDk3Y2Q6NjIzOTFkMTU2MGNlNTJiMmJjY2FkZmJjYjU1MjJiNWE=", "Accept"=>"application/json", "User-Agent"=>"ShopifyAPI/3.0.3 ActiveResource/4.0.0 Ruby/2.0.0"}
+I, [2013-08-21T21:14:20.220212 #20808]  INFO -- : Response:
+{"asset":{"key":"templates/404.liquid","public_url":null,"value":"\u003Cdiv id=\"col-main\" class=\"content\"\u003E\n  \u003Ch1 class=\"heading\"\u003Epage not found \u003Cspan class=\"not_found\"\u003E404\u003C/span\u003E\u003C/h1\u003E\n  \u003Cp\u003Eperhaps you want to return to the \u003Ca href=\"/\"\u003Ehome page\u003C/a\u003E or \u003Ca href=\"/search\"\u003Etry a search\u003C/a\u003E.\u003C/p\u003E\n\u003C/div\u003E","created_at":"2013-07-28T21:54:38-04:00","updated_at":"2013-07-28T21:54:38-04:00","content_type":"text/x-liquid","size":227,"theme_id":4587776}}
+I, [2013-08-21T21:14:20.550256 #20808]  INFO -- : PUT https://test-1-257.myshopify.com:443/admin/themes/4587776/assets.json
+I, [2013-08-21T21:14:20.553257 #20808]  INFO -- : --> 200 OK 201 (287.6ms)
+I, [2013-08-21T21:14:20.556145 #20808]  INFO -- : Request:
+{"asset":{"key":"templates/404.liquid","public_url":null,"value":"\u003CDIV ID=\"COL-MAIN\" CLASS=\"CONTENT\"\u003E\n  \u003CH1 CLASS=\"HEADING\"\u003EPAGE NOT FOUND \u003CSPAN CLASS=\"NOT_FOUND\"\u003E404\u003C/SPAN\u003E\u003C/H1\u003E\n  \u003CP\u003EPERHAPS YOU WANT TO RETURN TO THE \u003CA HREF=\"/\"\u003EHOME PAGE\u003C/A\u003E OR \u003CA HREF=\"/SEARCH\"\u003ETRY A SEARCH\u003C/A\u003E.\u003C/P\u003E\n\u003C/DIV\u003E","created_at":"2013-07-28T21:54:38-04:00","updated_at":"2013-07-28T21:54:38-04:00","content_type":"text/x-liquid","size":227}}
+I, [2013-08-21T21:14:20.556250 #20808]  INFO -- : Headers: {"Authorization"=>"Basic ODYxYWU5NDkxOTliY2NlNGUyNjg2NjExNGI0ZDk3Y2Q6NjIzOTFkMTU2MGNlNTJiMmJjY2FkZmJjYjU1MjJiNWE=", "Content-Type"=>"application/json", "User-Agent"=>"ShopifyAPI/3.0.3 ActiveResource/4.0.0 Ruby/2.0.0"}
+I, [2013-08-21T21:14:20.556319 #20808]  INFO -- : Response:
+{"asset":{"key":"templates/404.liquid","public_url":null,"created_at":"2013-07-28T21:54:38-04:00","updated_at":"2013-07-28T21:54:38-04:00","content_type":"text/x-liquid","size":227,"theme_id":4587776}}
+I, [2013-08-21T21:16:55.607542 #68153]  INFO -- : GET https://test-1-257.myshopify.com:443/admin/themes.json
+I, [2013-08-21T21:16:55.607797 #68153]  INFO -- : --> 200 OK 276 (159.3ms)
+I, [2013-08-21T21:16:55.608111 #68153]  INFO -- : Headers: {"Authorization"=>"Basic ODYxYWU5NDkxOTliY2NlNGUyNjg2NjExNGI0ZDk3Y2Q6NjIzOTFkMTU2MGNlNTJiMmJjY2FkZmJjYjU1MjJiNWE=", "Accept"=>"application/json", "User-Agent"=>"ShopifyAPI/3.0.3 ActiveResource/4.0.0 Ruby/2.0.0"}
+I, [2013-08-21T21:16:55.608231 #68153]  INFO -- : Response:
+{"themes":[{"created_at":"2013-07-28T21:54:29-04:00","id":4587776,"name":"radiance","role":"unpublished","updated_at":"2013-08-09T12:47:17-04:00"},{"created_at":"2013-08-09T12:45:57-04:00","id":4650733,"name":"Couture","role":"main","updated_at":"2013-08-09T12:47:17-04:00"}]}
+I, [2013-08-21T21:16:55.783844 #68153]  INFO -- : GET https://test-1-257.myshopify.com:443/admin/themes/4587776/assets.json?asset%5Bkey%5D=templates%2F404.liquid&theme_id=4587776
+I, [2013-08-21T21:16:55.784091 #68153]  INFO -- : --> 200 OK 574 (165.3ms)
+I, [2013-08-21T21:16:55.784302 #68153]  INFO -- : Headers: {"Authorization"=>"Basic ODYxYWU5NDkxOTliY2NlNGUyNjg2NjExNGI0ZDk3Y2Q6NjIzOTFkMTU2MGNlNTJiMmJjY2FkZmJjYjU1MjJiNWE=", "Accept"=>"application/json", "User-Agent"=>"ShopifyAPI/3.0.3 ActiveResource/4.0.0 Ruby/2.0.0"}
+I, [2013-08-21T21:16:55.784401 #68153]  INFO -- : Response:
+{"asset":{"key":"templates/404.liquid","public_url":null,"value":"\u003CDIV ID=\"COL-MAIN\" CLASS=\"CONTENT\"\u003E\n  \u003CH1 CLASS=\"HEADING\"\u003EPAGE NOT FOUND \u003CSPAN CLASS=\"NOT_FOUND\"\u003E404\u003C/SPAN\u003E\u003C/H1\u003E\n  \u003CP\u003EPERHAPS YOU WANT TO RETURN TO THE \u003CA HREF=\"/\"\u003EHOME PAGE\u003C/A\u003E OR \u003CA HREF=\"/SEARCH\"\u003ETRY A SEARCH\u003C/A\u003E.\u003C/P\u003E\n\u003C/DIV\u003E","created_at":"2013-07-28T21:54:38-04:00","updated_at":"2013-07-28T21:54:38-04:00","content_type":"text/x-liquid","size":227,"theme_id":4587776}}
+I, [2013-08-21T21:16:55.977065 #68153]  INFO -- : PUT https://test-1-257.myshopify.com:443/admin/themes/4587776/assets.json
+I, [2013-08-21T21:16:55.977336 #68153]  INFO -- : --> 200 OK 201 (189.8ms)
+I, [2013-08-21T21:16:55.977545 #68153]  INFO -- : Request:
+{"asset":{"key":"templates/404.liquid","public_url":null,"value":"\u003Cdiv id=\"col-main\" class=\"content\"\u003E\n  \u003Ch1 class=\"heading\"\u003Epage not found \u003Cspan class=\"not_found\"\u003E404\u003C/span\u003E\u003C/h1\u003E\n  \u003Cp\u003Eperhaps you want to return to the \u003Ca href=\"/\"\u003Ehome page\u003C/a\u003E or \u003Ca href=\"/search\"\u003Etry a search\u003C/a\u003E.\u003C/p\u003E\n\u003C/div\u003E","created_at":"2013-07-28T21:54:38-04:00","updated_at":"2013-07-28T21:54:38-04:00","content_type":"text/x-liquid","size":227}}
+I, [2013-08-21T21:16:55.977687 #68153]  INFO -- : Headers: {"Authorization"=>"Basic ODYxYWU5NDkxOTliY2NlNGUyNjg2NjExNGI0ZDk3Y2Q6NjIzOTFkMTU2MGNlNTJiMmJjY2FkZmJjYjU1MjJiNWE=", "Content-Type"=>"application/json", "User-Agent"=>"ShopifyAPI/3.0.3 ActiveResource/4.0.0 Ruby/2.0.0"}
+I, [2013-08-21T21:16:55.977794 #68153]  INFO -- : Response:
+{"asset":{"key":"templates/404.liquid","public_url":null,"created_at":"2013-07-28T21:54:38-04:00","updated_at":"2013-07-28T21:54:38-04:00","content_type":"text/x-liquid","size":227,"theme_id":4587776}}
+I, [2013-08-21T21:16:57.599748 #68153]  INFO -- : GET https://test-1-257.myshopify.com:443/admin/themes.json
+I, [2013-08-21T21:16:57.599959 #68153]  INFO -- : --> 200 OK 276 (145.2ms)
+I, [2013-08-21T21:16:57.600171 #68153]  INFO -- : Headers: {"Authorization"=>"Basic ODYxYWU5NDkxOTliY2NlNGUyNjg2NjExNGI0ZDk3Y2Q6NjIzOTFkMTU2MGNlNTJiMmJjY2FkZmJjYjU1MjJiNWE=", "Accept"=>"application/json", "User-Agent"=>"ShopifyAPI/3.0.3 ActiveResource/4.0.0 Ruby/2.0.0"}
+I, [2013-08-21T21:16:57.600289 #68153]  INFO -- : Response:
+{"themes":[{"created_at":"2013-07-28T21:54:29-04:00","id":4587776,"name":"radiance","role":"unpublished","updated_at":"2013-08-09T12:47:17-04:00"},{"created_at":"2013-08-09T12:45:57-04:00","id":4650733,"name":"Couture","role":"main","updated_at":"2013-08-09T12:47:17-04:00"}]}
+I, [2013-08-21T21:16:57.753989 #68153]  INFO -- : GET https://test-1-257.myshopify.com:443/admin/themes/4587776/assets.json?asset%5Bkey%5D=templates%2F404.liquid&theme_id=4587776
+I, [2013-08-21T21:16:57.754247 #68153]  INFO -- : --> 200 OK 574 (152.9ms)
+I, [2013-08-21T21:16:57.754507 #68153]  INFO -- : Headers: {"Authorization"=>"Basic ODYxYWU5NDkxOTliY2NlNGUyNjg2NjExNGI0ZDk3Y2Q6NjIzOTFkMTU2MGNlNTJiMmJjY2FkZmJjYjU1MjJiNWE=", "Accept"=>"application/json", "User-Agent"=>"ShopifyAPI/3.0.3 ActiveResource/4.0.0 Ruby/2.0.0"}
+I, [2013-08-21T21:16:57.754695 #68153]  INFO -- : Response:
+{"asset":{"key":"templates/404.liquid","public_url":null,"value":"\u003Cdiv id=\"col-main\" class=\"content\"\u003E\n  \u003Ch1 class=\"heading\"\u003Epage not found \u003Cspan class=\"not_found\"\u003E404\u003C/span\u003E\u003C/h1\u003E\n  \u003Cp\u003Eperhaps you want to return to the \u003Ca href=\"/\"\u003Ehome page\u003C/a\u003E or \u003Ca href=\"/search\"\u003Etry a search\u003C/a\u003E.\u003C/p\u003E\n\u003C/div\u003E","created_at":"2013-07-28T21:54:38-04:00","updated_at":"2013-07-28T21:54:38-04:00","content_type":"text/x-liquid","size":227,"theme_id":4587776}}
+I, [2013-08-21T21:16:57.957337 #68153]  INFO -- : PUT https://test-1-257.myshopify.com:443/admin/themes/4587776/assets.json
+I, [2013-08-21T21:16:57.957635 #68153]  INFO -- : --> 200 OK 201 (200.7ms)
+I, [2013-08-21T21:16:57.957906 #68153]  INFO -- : Request:
+{"asset":{"key":"templates/404.liquid","public_url":null,"value":"\u003CDIV ID=\"COL-MAIN\" CLASS=\"CONTENT\"\u003E\n  \u003CH1 CLASS=\"HEADING\"\u003EPAGE NOT FOUND \u003CSPAN CLASS=\"NOT_FOUND\"\u003E404\u003C/SPAN\u003E\u003C/H1\u003E\n  \u003CP\u003EPERHAPS YOU WANT TO RETURN TO THE \u003CA HREF=\"/\"\u003EHOME PAGE\u003C/A\u003E OR \u003CA HREF=\"/SEARCH\"\u003ETRY A SEARCH\u003C/A\u003E.\u003C/P\u003E\n\u003C/DIV\u003E","created_at":"2013-07-28T21:54:38-04:00","updated_at":"2013-07-28T21:54:38-04:00","content_type":"text/x-liquid","size":227}}
+I, [2013-08-21T21:16:57.958100 #68153]  INFO -- : Headers: {"Authorization"=>"Basic ODYxYWU5NDkxOTliY2NlNGUyNjg2NjExNGI0ZDk3Y2Q6NjIzOTFkMTU2MGNlNTJiMmJjY2FkZmJjYjU1MjJiNWE=", "Content-Type"=>"application/json", "User-Agent"=>"ShopifyAPI/3.0.3 ActiveResource/4.0.0 Ruby/2.0.0"}
+I, [2013-08-21T21:16:57.958256 #68153]  INFO -- : Response:
+{"asset":{"key":"templates/404.liquid","public_url":null,"created_at":"2013-07-28T21:54:38-04:00","updated_at":"2013-07-28T21:54:38-04:00","content_type":"text/x-liquid","size":227,"theme_id":4587776}}
+I, [2013-08-21T21:17:28.282885 #68185]  INFO -- : GET https://test-1-257.myshopify.com:443/admin/themes.json
+I, [2013-08-21T21:17:28.283103 #68185]  INFO -- : --> 200 OK 276 (148.6ms)
+I, [2013-08-21T21:17:28.283309 #68185]  INFO -- : Headers: {"Authorization"=>"Basic ODYxYWU5NDkxOTliY2NlNGUyNjg2NjExNGI0ZDk3Y2Q6NjIzOTFkMTU2MGNlNTJiMmJjY2FkZmJjYjU1MjJiNWE=", "Accept"=>"application/json", "User-Agent"=>"ShopifyAPI/3.0.3 ActiveResource/4.0.0 Ruby/2.0.0"}
+I, [2013-08-21T21:17:28.283386 #68185]  INFO -- : Response:
+{"themes":[{"created_at":"2013-07-28T21:54:29-04:00","id":4587776,"name":"radiance","role":"unpublished","updated_at":"2013-08-09T12:47:17-04:00"},{"created_at":"2013-08-09T12:45:57-04:00","id":4650733,"name":"Couture","role":"main","updated_at":"2013-08-09T12:47:17-04:00"}]}
+I, [2013-08-21T21:17:28.443905 #68185]  INFO -- : GET https://test-1-257.myshopify.com:443/admin/themes/4587776/assets.json?asset%5Bkey%5D=templates%2F404.liquid&theme_id=4587776
+I, [2013-08-21T21:17:28.444262 #68185]  INFO -- : --> 200 OK 574 (155.1ms)
+I, [2013-08-21T21:17:28.444626 #68185]  INFO -- : Headers: {"Authorization"=>"Basic ODYxYWU5NDkxOTliY2NlNGUyNjg2NjExNGI0ZDk3Y2Q6NjIzOTFkMTU2MGNlNTJiMmJjY2FkZmJjYjU1MjJiNWE=", "Accept"=>"application/json", "User-Agent"=>"ShopifyAPI/3.0.3 ActiveResource/4.0.0 Ruby/2.0.0"}
+I, [2013-08-21T21:17:28.444750 #68185]  INFO -- : Response:
+{"asset":{"key":"templates/404.liquid","public_url":null,"value":"\u003CDIV ID=\"COL-MAIN\" CLASS=\"CONTENT\"\u003E\n  \u003CH1 CLASS=\"HEADING\"\u003EPAGE NOT FOUND \u003CSPAN CLASS=\"NOT_FOUND\"\u003E404\u003C/SPAN\u003E\u003C/H1\u003E\n  \u003CP\u003EPERHAPS YOU WANT TO RETURN TO THE \u003CA HREF=\"/\"\u003EHOME PAGE\u003C/A\u003E OR \u003CA HREF=\"/SEARCH\"\u003ETRY A SEARCH\u003C/A\u003E.\u003C/P\u003E\n\u003C/DIV\u003E","created_at":"2013-07-28T21:54:38-04:00","updated_at":"2013-07-28T21:54:38-04:00","content_type":"text/x-liquid","size":227,"theme_id":4587776}}
+I, [2013-08-21T21:17:28.630985 #68185]  INFO -- : PUT https://test-1-257.myshopify.com:443/admin/themes/4587776/assets.json
+I, [2013-08-21T21:17:28.631313 #68185]  INFO -- : --> 200 OK 201 (182.9ms)
+I, [2013-08-21T21:17:28.631533 #68185]  INFO -- : Request:
+{"asset":{"key":"templates/404.liquid","public_url":null,"value":"\u003Cdiv id=\"col-main\" class=\"content\"\u003E\n  \u003Ch1 class=\"heading\"\u003Epage not found \u003Cspan class=\"not_found\"\u003E404\u003C/span\u003E\u003C/h1\u003E\n  \u003Cp\u003Eperhaps you want to return to the \u003Ca href=\"/\"\u003Ehome page\u003C/a\u003E or \u003Ca href=\"/search\"\u003Etry a search\u003C/a\u003E.\u003C/p\u003E\n\u003C/div\u003E","created_at":"2013-07-28T21:54:38-04:00","updated_at":"2013-07-28T21:54:38-04:00","content_type":"text/x-liquid","size":227}}
+I, [2013-08-21T21:17:28.631704 #68185]  INFO -- : Headers: {"Authorization"=>"Basic ODYxYWU5NDkxOTliY2NlNGUyNjg2NjExNGI0ZDk3Y2Q6NjIzOTFkMTU2MGNlNTJiMmJjY2FkZmJjYjU1MjJiNWE=", "Content-Type"=>"application/json", "User-Agent"=>"ShopifyAPI/3.0.3 ActiveResource/4.0.0 Ruby/2.0.0"}
+I, [2013-08-21T21:17:28.631808 #68185]  INFO -- : Response:
+{"asset":{"key":"templates/404.liquid","public_url":null,"created_at":"2013-07-28T21:54:38-04:00","updated_at":"2013-07-28T21:54:38-04:00","content_type":"text/x-liquid","size":227,"theme_id":4587776}}
+I, [2013-08-21T21:17:31.227835 #68185]  INFO -- : GET https://test-1-257.myshopify.com:443/admin/themes.json
+I, [2013-08-21T21:17:31.228095 #68185]  INFO -- : --> 200 OK 276 (143.2ms)
+I, [2013-08-21T21:17:31.228378 #68185]  INFO -- : Headers: {"Authorization"=>"Basic ODYxYWU5NDkxOTliY2NlNGUyNjg2NjExNGI0ZDk3Y2Q6NjIzOTFkMTU2MGNlNTJiMmJjY2FkZmJjYjU1MjJiNWE=", "Accept"=>"application/json", "User-Agent"=>"ShopifyAPI/3.0.3 ActiveResource/4.0.0 Ruby/2.0.0"}
+I, [2013-08-21T21:17:31.228512 #68185]  INFO -- : Response:
+{"themes":[{"created_at":"2013-07-28T21:54:29-04:00","id":4587776,"name":"radiance","role":"unpublished","updated_at":"2013-08-09T12:47:17-04:00"},{"created_at":"2013-08-09T12:45:57-04:00","id":4650733,"name":"Couture","role":"main","updated_at":"2013-08-09T12:47:17-04:00"}]}
+I, [2013-08-21T21:17:31.379476 #68185]  INFO -- : GET https://test-1-257.myshopify.com:443/admin/themes/4587776/assets.json?asset%5Bkey%5D=templates%2F404.liquid&theme_id=4587776
+I, [2013-08-21T21:17:31.379725 #68185]  INFO -- : --> 200 OK 574 (150.0ms)
+I, [2013-08-21T21:17:31.379988 #68185]  INFO -- : Headers: {"Authorization"=>"Basic ODYxYWU5NDkxOTliY2NlNGUyNjg2NjExNGI0ZDk3Y2Q6NjIzOTFkMTU2MGNlNTJiMmJjY2FkZmJjYjU1MjJiNWE=", "Accept"=>"application/json", "User-Agent"=>"ShopifyAPI/3.0.3 ActiveResource/4.0.0 Ruby/2.0.0"}
+I, [2013-08-21T21:17:31.380184 #68185]  INFO -- : Response:
+{"asset":{"key":"templates/404.liquid","public_url":null,"value":"\u003Cdiv id=\"col-main\" class=\"content\"\u003E\n  \u003Ch1 class=\"heading\"\u003Epage not found \u003Cspan class=\"not_found\"\u003E404\u003C/span\u003E\u003C/h1\u003E\n  \u003Cp\u003Eperhaps you want to return to the \u003Ca href=\"/\"\u003Ehome page\u003C/a\u003E or \u003Ca href=\"/search\"\u003Etry a search\u003C/a\u003E.\u003C/p\u003E\n\u003C/div\u003E","created_at":"2013-07-28T21:54:38-04:00","updated_at":"2013-07-28T21:54:38-04:00","content_type":"text/x-liquid","size":227,"theme_id":4587776}}
+I, [2013-08-21T21:17:31.587107 #68185]  INFO -- : PUT https://test-1-257.myshopify.com:443/admin/themes/4587776/assets.json
+I, [2013-08-21T21:17:31.587305 #68185]  INFO -- : --> 200 OK 201 (204.9ms)
+I, [2013-08-21T21:17:31.587469 #68185]  INFO -- : Request:
+{"asset":{"key":"templates/404.liquid","public_url":null,"value":"\u003CDIV ID=\"COL-MAIN\" CLASS=\"CONTENT\"\u003E\n  \u003CH1 CLASS=\"HEADING\"\u003EPAGE NOT FOUND \u003CSPAN CLASS=\"NOT_FOUND\"\u003E404\u003C/SPAN\u003E\u003C/H1\u003E\n  \u003CP\u003EPERHAPS YOU WANT TO RETURN TO THE \u003CA HREF=\"/\"\u003EHOME PAGE\u003C/A\u003E OR \u003CA HREF=\"/SEARCH\"\u003ETRY A SEARCH\u003C/A\u003E.\u003C/P\u003E\n\u003C/DIV\u003E","created_at":"2013-07-28T21:54:38-04:00","updated_at":"2013-07-28T21:54:38-04:00","content_type":"text/x-liquid","size":227}}
+I, [2013-08-21T21:17:31.587589 #68185]  INFO -- : Headers: {"Authorization"=>"Basic ODYxYWU5NDkxOTliY2NlNGUyNjg2NjExNGI0ZDk3Y2Q6NjIzOTFkMTU2MGNlNTJiMmJjY2FkZmJjYjU1MjJiNWE=", "Content-Type"=>"application/json", "User-Agent"=>"ShopifyAPI/3.0.3 ActiveResource/4.0.0 Ruby/2.0.0"}
+I, [2013-08-21T21:17:31.587687 #68185]  INFO -- : Response:
+{"asset":{"key":"templates/404.liquid","public_url":null,"created_at":"2013-07-28T21:54:38-04:00","updated_at":"2013-07-28T21:54:38-04:00","content_type":"text/x-liquid","size":227,"theme_id":4587776}}
+I, [2013-08-21T21:21:05.596299 #68243]  INFO -- : GET https://test-1-257.myshopify.com:443/admin/themes.json
+I, [2013-08-21T21:21:05.596665 #68243]  INFO -- : --> 200 OK 276 (196.0ms)
+I, [2013-08-21T21:21:05.597019 #68243]  INFO -- : Headers: {"Authorization"=>"Basic ODYxYWU5NDkxOTliY2NlNGUyNjg2NjExNGI0ZDk3Y2Q6NjIzOTFkMTU2MGNlNTJiMmJjY2FkZmJjYjU1MjJiNWE=", "Accept"=>"application/json", "User-Agent"=>"ShopifyAPI/3.0.3 ActiveResource/4.0.0 Ruby/2.0.0"}
+I, [2013-08-21T21:21:05.597169 #68243]  INFO -- : Response:
+{"themes":[{"created_at":"2013-07-28T21:54:29-04:00","id":4587776,"name":"radiance","role":"unpublished","updated_at":"2013-08-09T12:47:17-04:00"},{"created_at":"2013-08-09T12:45:57-04:00","id":4650733,"name":"Couture","role":"main","updated_at":"2013-08-09T12:47:17-04:00"}]}
+I, [2013-08-21T21:21:05.765648 #68243]  INFO -- : GET https://test-1-257.myshopify.com:443/admin/themes/4587776/assets.json?asset%5Bkey%5D=templates%2F404.liquid&theme_id=4587776
+I, [2013-08-21T21:21:05.765959 #68243]  INFO -- : --> 200 OK 574 (161.5ms)
+I, [2013-08-21T21:21:05.766280 #68243]  INFO -- : Headers: {"Authorization"=>"Basic ODYxYWU5NDkxOTliY2NlNGUyNjg2NjExNGI0ZDk3Y2Q6NjIzOTFkMTU2MGNlNTJiMmJjY2FkZmJjYjU1MjJiNWE=", "Accept"=>"application/json", "User-Agent"=>"ShopifyAPI/3.0.3 ActiveResource/4.0.0 Ruby/2.0.0"}
+I, [2013-08-21T21:21:05.766403 #68243]  INFO -- : Response:
+{"asset":{"key":"templates/404.liquid","public_url":null,"value":"\u003CDIV ID=\"COL-MAIN\" CLASS=\"CONTENT\"\u003E\n  \u003CH1 CLASS=\"HEADING\"\u003EPAGE NOT FOUND \u003CSPAN CLASS=\"NOT_FOUND\"\u003E404\u003C/SPAN\u003E\u003C/H1\u003E\n  \u003CP\u003EPERHAPS YOU WANT TO RETURN TO THE \u003CA HREF=\"/\"\u003EHOME PAGE\u003C/A\u003E OR \u003CA HREF=\"/SEARCH\"\u003ETRY A SEARCH\u003C/A\u003E.\u003C/P\u003E\n\u003C/DIV\u003E","created_at":"2013-07-28T21:54:38-04:00","updated_at":"2013-07-28T21:54:38-04:00","content_type":"text/x-liquid","size":227,"theme_id":4587776}}
+I, [2013-08-21T21:21:05.963681 #68243]  INFO -- : PUT https://test-1-257.myshopify.com:443/admin/themes/4587776/assets.json
+I, [2013-08-21T21:21:05.963935 #68243]  INFO -- : --> 200 OK 201 (194.0ms)
+I, [2013-08-21T21:21:05.964156 #68243]  INFO -- : Request:
+{"asset":{"key":"templates/404.liquid","public_url":null,"value":"\u003Cdiv id=\"col-main\" class=\"content\"\u003E\n  \u003Ch1 class=\"heading\"\u003Epage not found \u003Cspan class=\"not_found\"\u003E404\u003C/span\u003E\u003C/h1\u003E\n  \u003Cp\u003Eperhaps you want to return to the \u003Ca href=\"/\"\u003Ehome page\u003C/a\u003E or \u003Ca href=\"/search\"\u003Etry a search\u003C/a\u003E.\u003C/p\u003E\n\u003C/div\u003E","created_at":"2013-07-28T21:54:38-04:00","updated_at":"2013-07-28T21:54:38-04:00","content_type":"text/x-liquid","size":227}}
+I, [2013-08-21T21:21:05.964298 #68243]  INFO -- : Headers: {"Authorization"=>"Basic ODYxYWU5NDkxOTliY2NlNGUyNjg2NjExNGI0ZDk3Y2Q6NjIzOTFkMTU2MGNlNTJiMmJjY2FkZmJjYjU1MjJiNWE=", "Content-Type"=>"application/json", "User-Agent"=>"ShopifyAPI/3.0.3 ActiveResource/4.0.0 Ruby/2.0.0"}
+I, [2013-08-21T21:21:05.964404 #68243]  INFO -- : Response:
+{"asset":{"key":"templates/404.liquid","public_url":null,"created_at":"2013-07-28T21:54:38-04:00","updated_at":"2013-07-28T21:54:38-04:00","content_type":"text/x-liquid","size":227,"theme_id":4587776}}
+I, [2013-08-21T21:21:08.575023 #68243]  INFO -- : GET https://test-1-257.myshopify.com:443/admin/themes.json
+I, [2013-08-21T21:21:08.575333 #68243]  INFO -- : --> 200 OK 276 (151.0ms)
+I, [2013-08-21T21:21:08.575660 #68243]  INFO -- : Headers: {"Authorization"=>"Basic ODYxYWU5NDkxOTliY2NlNGUyNjg2NjExNGI0ZDk3Y2Q6NjIzOTFkMTU2MGNlNTJiMmJjY2FkZmJjYjU1MjJiNWE=", "Accept"=>"application/json", "User-Agent"=>"ShopifyAPI/3.0.3 ActiveResource/4.0.0 Ruby/2.0.0"}
+I, [2013-08-21T21:21:08.575835 #68243]  INFO -- : Response:
+{"themes":[{"created_at":"2013-07-28T21:54:29-04:00","id":4587776,"name":"radiance","role":"unpublished","updated_at":"2013-08-09T12:47:17-04:00"},{"created_at":"2013-08-09T12:45:57-04:00","id":4650733,"name":"Couture","role":"main","updated_at":"2013-08-09T12:47:17-04:00"}]}
+I, [2013-08-21T21:21:08.732545 #68243]  INFO -- : GET https://test-1-257.myshopify.com:443/admin/themes/4587776/assets.json?asset%5Bkey%5D=templates%2F404.liquid&theme_id=4587776
+I, [2013-08-21T21:21:08.732769 #68243]  INFO -- : --> 200 OK 574 (155.6ms)
+I, [2013-08-21T21:21:08.732966 #68243]  INFO -- : Headers: {"Authorization"=>"Basic ODYxYWU5NDkxOTliY2NlNGUyNjg2NjExNGI0ZDk3Y2Q6NjIzOTFkMTU2MGNlNTJiMmJjY2FkZmJjYjU1MjJiNWE=", "Accept"=>"application/json", "User-Agent"=>"ShopifyAPI/3.0.3 ActiveResource/4.0.0 Ruby/2.0.0"}
+I, [2013-08-21T21:21:08.733059 #68243]  INFO -- : Response:
+{"asset":{"key":"templates/404.liquid","public_url":null,"value":"\u003Cdiv id=\"col-main\" class=\"content\"\u003E\n  \u003Ch1 class=\"heading\"\u003Epage not found \u003Cspan class=\"not_found\"\u003E404\u003C/span\u003E\u003C/h1\u003E\n  \u003Cp\u003Eperhaps you want to return to the \u003Ca href=\"/\"\u003Ehome page\u003C/a\u003E or \u003Ca href=\"/search\"\u003Etry a search\u003C/a\u003E.\u003C/p\u003E\n\u003C/div\u003E","created_at":"2013-07-28T21:54:38-04:00","updated_at":"2013-07-28T21:54:38-04:00","content_type":"text/x-liquid","size":227,"theme_id":4587776}}
+I, [2013-08-21T21:21:08.976135 #68243]  INFO -- : PUT https://test-1-257.myshopify.com:443/admin/themes/4587776/assets.json
+I, [2013-08-21T21:21:08.976290 #68243]  INFO -- : --> 200 OK 201 (241.7ms)
+I, [2013-08-21T21:21:08.976619 #68243]  INFO -- : Request:
+{"asset":{"key":"templates/404.liquid","public_url":null,"value":"\u003CDIV ID=\"COL-MAIN\" CLASS=\"CONTENT\"\u003E\n  \u003CH1 CLASS=\"HEADING\"\u003EPAGE NOT FOUND \u003CSPAN CLASS=\"NOT_FOUND\"\u003E404\u003C/SPAN\u003E\u003C/H1\u003E\n  \u003CP\u003EPERHAPS YOU WANT TO RETURN TO THE \u003CA HREF=\"/\"\u003EHOME PAGE\u003C/A\u003E OR \u003CA HREF=\"/SEARCH\"\u003ETRY A SEARCH\u003C/A\u003E.\u003C/P\u003E\n\u003C/DIV\u003E","created_at":"2013-07-28T21:54:38-04:00","updated_at":"2013-07-28T21:54:38-04:00","content_type":"text/x-liquid","size":227}}
+I, [2013-08-21T21:21:08.976767 #68243]  INFO -- : Headers: {"Authorization"=>"Basic ODYxYWU5NDkxOTliY2NlNGUyNjg2NjExNGI0ZDk3Y2Q6NjIzOTFkMTU2MGNlNTJiMmJjY2FkZmJjYjU1MjJiNWE=", "Content-Type"=>"application/json", "User-Agent"=>"ShopifyAPI/3.0.3 ActiveResource/4.0.0 Ruby/2.0.0"}
+I, [2013-08-21T21:21:08.976868 #68243]  INFO -- : Response:
+{"asset":{"key":"templates/404.liquid","public_url":null,"created_at":"2013-07-28T21:54:38-04:00","updated_at":"2013-07-28T21:54:38-04:00","content_type":"text/x-liquid","size":227,"theme_id":4587776}}
