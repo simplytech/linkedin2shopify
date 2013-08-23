@@ -26,9 +26,17 @@ class LinkedinController < ApplicationController
       client.authorize_from_access(session[:atoken], session[:asecret])
     end
     @my_var = 'LinkedIn #callback'
+    
     @profile = client.profile
     @connections = client.connections
-    @client = client
+    @user=client.profile(:fields => ['positions'] )
+    @companies = @user.positions.all.map do |t|
+       puts t.company.name
+       t.company.name
+    end
+    
+    
+    @client = client #pass client to debugger
     # debugger
   end
 
